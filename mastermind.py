@@ -3,7 +3,7 @@ import random
 
 # TODO: Decompose into functions
 #global variables:
-code = [0,0,0,0]    # creates code
+code = [0,0,0,0] # creates code
 answer = '' # use to store user input answer
 correct_digits_and_position = 0 # keep track of correct digits and position
 correct_digits_only = 0 # keeps track of correct digits but off position
@@ -12,7 +12,8 @@ turns = 0   # keeps track of the amount of turns user has left to guess code
 
 def generate_code():
     '''
-    Generates code to be guessed by user
+    Generates code to be guessed by the user
+    
     '''
     for i in range(4):
         value = random.randint(1, 8) # 8 possible digits
