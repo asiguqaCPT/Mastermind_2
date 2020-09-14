@@ -12,9 +12,9 @@ turns = 0   # keeps track of the amount of turns user has left to guess code
 
 def generate_code():
     '''
-    Generates code to be guessed by the user
-    
+    Generates code to be guessed by the user 
     '''
+    global code
     for i in range(4):
         value = random.randint(1, 8) # 8 possible digits
         while value in code:
